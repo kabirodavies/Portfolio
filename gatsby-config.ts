@@ -5,15 +5,13 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.mjs
     siteTitle: `Davies Portifolio`,
-    // siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    // siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    // siteUrl: `https://cara.lekoarts.de`,
-    // siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteTitleAlt: `Davies - Portfolio`,
+    siteHeadline: `Davies - Portfolio`,
+    siteUrl: `https://github.com/kabirodavies/gatsby-github-pages`,
+    siteDescription: `Data Science Portfolio`,
     // siteImage: `/banner.jpg`,
+    pathPrefix: "/gatsby-github-pages",
     siteLanguage: `en`,
     author: `@lekoarts_de`,
   },
