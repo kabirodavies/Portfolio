@@ -5,13 +5,13 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
   siteMetadata: {
+	pathPrefix: '/gatsby-github-pages',
     siteTitle: `Davies Portifolio`,
     siteTitleAlt: `Davies - Portfolio`,
     siteHeadline: `Davies - Portfolio`,
     siteUrl: `https://github.com/kabirodavies/gatsby-github-pages`,
     siteDescription: `Data Science Portfolio`,
     // siteImage: `/banner.jpg`,
-    pathPrefix: "/gatsby-github-pages",
     siteLanguage: `en`,
     author: `@lekoarts_de`,
   },
