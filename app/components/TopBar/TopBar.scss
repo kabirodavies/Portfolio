@@ -1,68 +1,5 @@
-// // sticky top-0 p-5 flex items-strat justify-between z-20  xl:items-center
 
-// .myClass {
-//     position: sticky;
-//     top: 0;
-//     padding: 5px;
-//     display: flex;
-//     align-items: start;
-//     justify-content: space-between;
-//     z-index: 20;
-  
-//     @media (min-width: 1280px) {
-//       align-items: center;
-//     }
-//   }
-  
 
-  
-// // flex flex-row items-center text-gray-300 max-w-7xl mx-auto'
-
-// .myClass {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     color: #ccc;
-//     max-width: 7xl;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-  
-// //   uppercase hidden md:inline-flex text-sm text-gray-400
-//   .myClass {
-//     text-transform: uppercase;
-//     display: none;
-    
-//     @media (min-width: 768px) {
-//       display: inline-flex;
-//     }
-    
-//     font-size: 0.875rem;
-//     color: #888;
-//   }
-
-// //   snap-start
-//   .myClass {
-//     scroll-snap-align: start;
-//   }
-
-// // cursor-pointer
-//   .myClass {
-//     cursor: pointer;
-//   }
-  
-// //   flex flex-row items-center max-w-7xl mx-auto
-//   .myClass {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     max-width: 7xl;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-  
-  
-/* Topbar.module.scss */
 .social-icon-wrapper {
     position: relative;
   
@@ -70,8 +7,8 @@
       transition: transform 0.3s ease;
   
       &:hover {
-        transform: scale(1.1); /* Magnify the icon on hover */
-        fill: #007bff; /* Change the color on hover (you can adjust the color as per your preference) */
+        transform: scale(1.1); 
+        fill: #007bff;
       }
     }
   }
