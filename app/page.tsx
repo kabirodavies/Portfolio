@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           <div className='flex items-center justify-center'>
             <Image 
             className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 
-            cursor-pointer'
+            cursor-pointer bg-black'
             src={images.davis} alt={''}/>
           </div>
         </footer>
