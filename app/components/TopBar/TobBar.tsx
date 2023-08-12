@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-// import './Topbar.scss';
+import './Topbar.scss';
 
 type Props = {};
 
@@ -19,7 +19,7 @@ export default function Header({}: Props) {
         className='flex flex-row items-center max-w-7xl mx-auto'
       >
         {/* Add the class "social-icon-wrapper" to the div wrapping the SocialIcon components */}
-        <div className=''>
+        <div className='social-icon-wrapper'>
           <SocialIcon
             url='https://linkedin.com/in/kabirodavies'
             fgColor='gray'
@@ -52,7 +52,7 @@ export default function Header({}: Props) {
         transition={{ duration: 1.5, ease: 'easeOut' }}
         className='flex flex-row items-center text-gray-300 max-w-7xl mx-auto'
       >
-        <div className=''>
+        <div className='social-icon-wrapper'>
           <SocialIcon
             url='#contact'
             className='cursor-pointer social-icon'
