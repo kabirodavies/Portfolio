@@ -5,20 +5,33 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-import './Topbar.scss';
+import './TopBar.scss';
 
 type Props = {};
 
-export default function Header({}: Props) {
+export default function TopBar({}: Props) {
   return (
     <header className='sticky top-0 p-5 flex items-strat justify-between z-20 xl:items-center'>
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: 'easeOut' }}
-        className='flex flex-row items-center max-w-7xl mx-auto'
+        className='flex flex-row items-center text-gray-600 max-w-7xl mx-auto'
+      >             
+        <Link href='/' className=' social-icon-wrapper cursor-pointer'>
+          <h1 className=' text-2xl'>
+            <span style={{ fontWeight: 'bold' }}>davies</span>njogu.
+          </h1>
+        </Link>
+
+      </motion.div>
+      
+      <motion.div
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, ease: 'easeOut' }}
+        className='flex flex-row items-center text-gray-600 max-w-7xl mx-auto'
       >
-        {/* Add the class "social-icon-wrapper" to the div wrapping the SocialIcon components */}
         <div className='social-icon-wrapper'>
           <SocialIcon
             url='https://linkedin.com/in/kabirodavies'
@@ -44,29 +57,6 @@ export default function Header({}: Props) {
             className='social-icon'
           />
         </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ x: 500, opacity: 0, scale: 0.5 }}
-        animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5, ease: 'easeOut' }}
-        className='flex flex-row items-center text-gray-300 max-w-7xl mx-auto'
-      >
-        <div className='social-icon-wrapper'>
-          <SocialIcon
-            url='#contact'
-            className='cursor-pointer social-icon'
-            network='email'
-            fgColor='gray'
-            bgColor='transparent'
-          />
-        </div>
-        <Link href='#contact' className='cursor-pointer'>
-          <section id='contact' className='snap-start' />
-          <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
-            Get In Touch
-          </p>
-        </Link>
       </motion.div>
     </header>
   );

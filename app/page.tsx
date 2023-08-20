@@ -9,7 +9,7 @@ import { images } from './constants';
 // import { About, Skills, Testimonial, Work, Header, Footer, Contact } from './container';
 import { Header, About } from './container';
 
-import { TopBar, NavBar, Nav } from './components';
+import { TopBar, NavBar } from './components';
 
 import './page.scss';
 
@@ -18,8 +18,8 @@ const Home: NextPage = () => {
   return (
     <>
     <div className='app'>
-      <TopBar/>  
-      <Nav/> 
+      <TopBar/>
+      <NavBar />
       
       <section id="home" className=''>
         <Header />
